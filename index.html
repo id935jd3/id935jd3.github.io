@@ -1,1 +1,68 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Hague gentrification map</title>
+
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!--
+    This for an icon on the tab
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico"/>
+    -->
+
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          rel="stylesheet"/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script crossorigin=""
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .full-height {
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="full-height" id="mapid"></div>
+<script>
+
+    var mymap = L.map('mapid').setView([52.077396, 4.31247], 14);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiaWQ5MzVqZDMiLCJhIjoiY2tjZGp1M3VxMDBkbTJxc3dmbTY1ZWhlcCJ9.w3laGzgZR7en_xEpKkc-Og'
+    }).addTo(mymap);
+
+    var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
+
+</script>
+
+
+</body>
+</html>
