@@ -6,8 +6,8 @@ const neighbourhood1 = {
             weight: 2,
             color: "#999",
             opacity: 1,
-            fillColor: "#B0DE5C",
-            fillOpacity: 0.8
+            fillColor: "#FF6666",
+            fillOpacity: 0.7
         }
     },
     "geometry": {
@@ -27,11 +27,13 @@ const neighbourhood1 = {
 
 const neighbourhoodList = [neighbourhood1];
 
+let location1PopupContent = readTextFileAsString("location1PopupContent.html");
+
 const location1 = {
     "type": "Feature",
     "properties": {
         "name": "A point to show",
-        "popupContent": "This is an important point"
+        "popupContent": location1PopupContent
     },
     "geometry": {
         "type": "Point",
