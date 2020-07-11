@@ -11,7 +11,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var popup = L.popup();
 
-function onMapClick(e) {
+/*function onMapClick(e) {
     // Round longitude and latitude to 6 decimals
     let lng = e.latlng.lng.toFixed(6);
     let lat = e.latlng.lat.toFixed(6);
@@ -22,7 +22,7 @@ function onMapClick(e) {
         .openOn(map);
 }
 
-map.on('click', onMapClick);
+map.on('click', onMapClick);*/
 
 function onEachFeature(feature, layer) {
     var popupContent = "";
