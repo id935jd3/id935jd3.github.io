@@ -31,7 +31,10 @@ function onEachFeature(feature, layer) {
         popupContent += feature.properties.popupContent;
     }
 
-    layer.bindPopup(popupContent);
+    var thepopup = layer.bindPopup(popupContent);
+    thepopup.on('click', function(e) {
+        animateCollapsible();
+    } );
 }
 
 L.geoJson(neighbourhoodList, {

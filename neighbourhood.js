@@ -1,7 +1,9 @@
+let neighbourhood1PopupContent = readTextFileAsString("location1PopupContent.html");
+
 const neighbourhood1 = {
     "type": "Feature",
     "properties": {
-        "popupContent": "This is a gentrified neighbourhood",
+        "popupContent": neighbourhood1PopupContent,
         "style": {
             weight: 2,
             color: "#999",
