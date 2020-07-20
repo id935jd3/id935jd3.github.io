@@ -51,3 +51,5 @@ L.geoJson(locationList, {
     },
     onEachFeature: onEachFeature
 }).addTo(map);
+
+legend.addTo(map);
