@@ -1,4 +1,8 @@
-const neighbourhoodList = [zeeheldenkwartier, moerwijk, binckhorst];
+const notGentrifiedNeighbourhoods = [transvaal];
+const gentrifyingNeighbourhoods = [zeeheldenkwartier, moerwijk, binckhorst];
+const richNeighbourhoods = [];
+
+const neighbourhoodList = notGentrifiedNeighbourhoods.concat(gentrifyingNeighbourhoods, richNeighbourhoods);
 
 let location1PopupContent = readTextFileAsString("location1PopupContent.html");
 
