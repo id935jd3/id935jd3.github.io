@@ -44,6 +44,20 @@ function localize(language) {
     }
 }
 
+function openFullscreen(elemId) {
+    const elem = document.getElementById(elemId);
+
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+}
+
 const gentrifyingColor = "#ffb500";
 const richColor = "#FF6666";
 const notGentrifiedColor = "#41cb01";
