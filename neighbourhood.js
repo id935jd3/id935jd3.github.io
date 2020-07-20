@@ -1,4 +1,4 @@
-const neighbourhoodList = [zeeheldenkwartier];
+const neighbourhoodList = [zeeheldenkwartier, moerwijk];
 
 let location1PopupContent = readTextFileAsString("location1PopupContent.html");
 
