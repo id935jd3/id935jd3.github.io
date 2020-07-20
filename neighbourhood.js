@@ -1,6 +1,6 @@
 const notGentrifiedNeighbourhoods = [transvaal];
-const gentrifyingNeighbourhoods = [zeeheldenkwartier, moerwijk, binckhorst];
-const richNeighbourhoods = [duindorp];
+const gentrifyingNeighbourhoods = [zeeheldenkwartier, moerwijk, binckhorst, duindorp];
+const richNeighbourhoods = [];
 
 const neighbourhoodList = notGentrifiedNeighbourhoods.concat(gentrifyingNeighbourhoods, richNeighbourhoods);
 
