@@ -8,7 +8,7 @@ const zeeheldenkwartier = {
             weight: 2,
             color: "#999",
             opacity: 1,
-            fillColor: "#FF6666",
+            fillColor: gentrifyingColor,
             fillOpacity: 0.7
         }
     },

@@ -43,3 +43,7 @@ function localize(language) {
         }
     }
 }
+
+const gentrifyingColor = "#ec7b00";
+const richColor = "#FF6666";
+const notGentrifiedColor = "#41cb01";
