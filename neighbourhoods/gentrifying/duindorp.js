@@ -8,7 +8,7 @@ const duindorp = {
             weight: 2,
             color: "#999",
             opacity: 1,
-            fillColor: richColor,
+            fillColor: gentrifyingColor,
             fillOpacity: 0.7
         }
     },
