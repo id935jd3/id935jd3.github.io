@@ -51,4 +51,4 @@ const location1 = {
     }
 };
 
-const locationList = [location1];
+const locationList = [];
