@@ -19,9 +19,9 @@ legend.onAdd = function (map) {
     // Generate a list of colored squares with the names
     let language, legendHtml = "";
     for (language of languages) {
-        legendHtml += '<div lang=' + language +  '>';
+        legendHtml += '<div lang=' + language + '>';
         for (let i = 0; i < grades[language].length; i++) {
-            legendHtml+=
+            legendHtml +=
                 '<i style="background:' + labels[i] + '"></i>' + grades[language][i];
             if (i + 1 < grades[language].length) {
                 legendHtml += '<br> <br>';

@@ -19,12 +19,12 @@
 }
 
 .active:after {
-  content: "\2212";
+    content: "\2212";
 }
 
 .collapsibleTitle {
     background-color: #8e8e8e;
-    text-align:  center;
+    text-align: center;
     font-weight: bolder;
     font-size: large;
     color: white;
