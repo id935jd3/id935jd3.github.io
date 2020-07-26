@@ -9,7 +9,7 @@ const transvaal = {
             color: "#999",
             opacity: 1,
             fillColor: notGentrifiedColor,
-            fillOpacity: 0.7
+            fillOpacity: neighbourhoodOpacity
         }
     },
     "geometry": {

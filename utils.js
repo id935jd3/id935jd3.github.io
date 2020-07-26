@@ -61,3 +61,4 @@ function openFullscreen(elemId) {
 const gentrifyingColor = "#ffb500";
 const richColor = "#FF6666";
 const notGentrifiedColor = "#41cb01";
+const neighbourhoodOpacity = 0.6;

@@ -9,7 +9,7 @@ const duindorp = {
             color: "#999",
             opacity: 1,
             fillColor: gentrifyingColor,
-            fillOpacity: 0.7
+            fillOpacity: neighbourhoodOpacity
         }
     },
     "geometry": {

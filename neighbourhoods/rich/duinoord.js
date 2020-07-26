@@ -9,7 +9,7 @@ const duinoord = {
             color: "#999",
             opacity: 1,
             fillColor: richColor,
-            fillOpacity: 0.7
+            fillOpacity: neighbourhoodOpacity
         }
     },
     "geometry": {
