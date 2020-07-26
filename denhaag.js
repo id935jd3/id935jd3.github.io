@@ -32,12 +32,12 @@ function onEachFeature(feature, layer) {
     }
 
     var thepopup = layer.bindPopup(popupContent);
-    thepopup.on('click', function(e) {
+    thepopup.on('click', function (e) {
         const languageButton = document.getElementById('languageButton');
         const selectedLanguage = languageButton.options[languageButton.selectedIndex].value;
         localize(selectedLanguage);
         animateCollapsible();
-    } );
+    });
 }
 
 L.geoJson(neighbourhoodList, {
