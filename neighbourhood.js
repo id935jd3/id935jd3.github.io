@@ -10,7 +10,7 @@ legend.onAdd = function (map) {
 
     let div = L.DomUtil.create('div', 'info legend'),
         grades_en = ["Not (yet) gentrified", "Gentrify(ing/ed)", "Rich"],
-        grades_nl = ["Niet gentrified", "Gentrify(ing/ed)", "Rich"],
+        grades_nl = ["(Nog) niet gentrified", "Gentrify(ing/ed)", "Rijkelijk"],
         grades = {"en": grades_en, "nl": grades_nl},
         languages = ["en", "nl"],
         labels = [notGentrifiedColor, gentrifyingColor, richColor];

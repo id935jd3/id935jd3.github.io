@@ -1,6 +1,7 @@
 .legend {
     line-height: 18px;
     color: #555;
+    text-align: left;
 }
 
 .legend i {
