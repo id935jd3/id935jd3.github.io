@@ -1,4 +1,4 @@
-const notGentrifiedNeighbourhoods = [transvaal, laakkwartier];
+const notGentrifiedNeighbourhoods = [transvaal, laakkwartier, spoorwijk];
 const gentrifyingNeighbourhoods = [zeeheldenkwartier, moerwijk, binckhorst, duindorp, schilderswijk,
     regentesseValkenboskwartier, scheveningenHaven];
 const richNeighbourhoods = [duinoord, archipelbuurt, vogelwijk, bezuidenhout];
