@@ -47,8 +47,12 @@ L.geoJson(neighbourhoodList, {
     onEachFeature: onEachFeature
 }).addTo(map);
 
+// Reduce marker size to approximate 2/3 of the original size
+L.Icon.Default.prototype.options.iconSize = [17, 28];
+L.Icon.Default.prototype.options.shadowSize = [0, 0];
+L.Icon.Default.prototype.options.popupAnchor = [-3, -34];
 
-L.geoJson(locationList, {
+L.geoJson(antiSquats, {
     style: function (feature) {
         return feature.properties && feature.properties.style;
     },
