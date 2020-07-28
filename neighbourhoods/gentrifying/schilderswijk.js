@@ -8,7 +8,7 @@ const schilderswijk = {
             weight: 2,
             color: "#999",
             opacity: 1,
-            fillColor: gentrifyingColor,
+            fill: 'url(images/yellow-green.png)',
             fillOpacity: neighbourhoodOpacity
         }
     },
